@@ -13,8 +13,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if !isOn{
-                Rectangle().background(Color.yellow)
+                Rectangle().background(Color.black)
             }
+            
             Button("Click Me") {
                 isOn.toggle()
                 onClick()
